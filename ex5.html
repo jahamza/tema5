@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var userInput1 = prompt("Peroana 1");
+        var userSalary1 = prompt("Whats your salary?");
+        var userInput2 = prompt("Peroana 2");
+        var userSalary2 = prompt("Whats your salary?");
+        var userInput3 = prompt("Peroana 3");
+        var userSalary3 = prompt("Whats your salary?");
+
+        function averageSalary(userSalary1, userSalary2, userSalary3) {
+
+            var sumSalary = (parseInt(userSalary1) + parseInt(userSalary2) + parseInt(userSalary3));
+            var average = parseFloat(sumSalary) * 12 / 3;
+
+            console.log(sumSalary);
+            alert(average);
+
+            if (userSalary1 > userSalary2 && userSalary1 > userSalary3) {
+                alert(userInput1);
+            } else {
+                if (userSalary2 > userSalary1 && userSalary2 > userSalary3) {
+                    alert(userInput2);
+                } else {
+                    alert(userInput3)
+                }
+            }
+        }
+
+        averageSalary(userSalary1, userSalary2, userSalary3);
+    </script>
+
+</body>
+
+</html>

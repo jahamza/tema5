@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var person1 = prompt("How old are you?");
+        var person2 = prompt("What about you?");
+        var person3 = prompt("And you?");
+        var person4 = prompt("Alta intrebare")
+        var totalAdults = 0;
+
+
+        function calculateAdults(person1, person2, person3, person4) {
+
+            parseInt(person1);
+            parseInt(person2);
+            parseInt(person3);
+            parseInt(person4)
+
+            if (person1 >= 18) {
+                totalAdults++;
+            }
+
+            if (person2 >= 18) {
+                totalAdults++;
+            }
+
+            if (person3 >= 18) {
+                totalAdults++;
+            }
+
+            if (person4 >= 18) {
+                totalAdults++;
+            } else {
+                totalAdults = totalAdults;
+            }
+
+            return totalAdults
+
+
+        }
+
+        calculateAdults(person1, person2, person3, person4)
+        alert(`The number of adults is ${totalAdults}`);
+
+    </script>
+
+</body>
+
+</html>

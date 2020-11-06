@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function milesToKm(miles) {
+
+            let km = miles * 1.60934;
+            return km;
+
+        }
+
+        milesToKm(281.5)
+
+        function bucToCluj() {
+
+            let result70 = milesToKm(281.5) / 70;
+            let result50 = milesToKm(281.5) / 50;
+            console.log("Buc to Cluj 70km/h:" + " " + result70);
+            console.log("Buc to Cluj 50km/h:" + " " + result50);
+
+        }
+
+        bucToCluj();
+
+        function clujToIasi() {
+            let result70 = milesToKm(243.5) / 70;
+            let result50 = milesToKm(243.5) / 50;
+            console.log("Cluj to Iasi 70km/h:" + " " + result70);
+            console.log("Cluj to Iasi 50km/h:" + " " + result50);
+        }
+
+        clujToIasi();
+
+    </script>
+
+</body>
+</html>

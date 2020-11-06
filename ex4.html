@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let person1 = prompt("How old are you?");
+        let person2 = prompt("What about you?");
+        let person3 = prompt("And you?");
+
+        function userAge(person1, person2, person3) {
+
+            parseInt(person1);
+            parseInt(person2);
+            parseInt(person3);
+
+            let option1 = person1 + " " + person2 + " " + person3;
+            let option2 = person1 + " " + person2;
+            let option3 = person2 + " " + person3;
+            let option4 = person1 + " " + person3;
+            let option5 = person1;
+            let option6 = person2;
+            let option7 = person3;
+
+
+            if (person1 >= 18 && person2 >= 18 && person3 >= 18) {
+
+                console.log(option1);
+
+            } else if (person1 >= 18 && person2 >= 18) {
+
+                console.log(option2);
+
+            } else if (person2 >= 18 && person3 >= 18) {
+
+                console.log(option3);
+
+            } else if (person1 >= 18 && person3 >= 18) {
+
+                console.log(option4);
+
+            } else if (person1 >= 18) {
+
+                console.log(option5);
+
+            } else if (person2 >= 18) {
+
+                console.log(option6);
+
+            } else if (person3 >= 18)
+
+                console.log(option7);
+
+        }
+
+        userAge(person1, person2, person3);
+
+    </script>
+
+</body>
+
+</html>
